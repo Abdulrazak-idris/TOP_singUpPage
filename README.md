@@ -1,1 +1,1 @@
-# TOP_singUpPage
+# This project is intended to give me a chance to flex some of the new items i have been absorbing over the past few lessons on TOP (TheOdinsProjects). This time it’s a sign-up form for an imaginary service.
