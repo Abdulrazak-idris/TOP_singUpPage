@@ -13,7 +13,7 @@ body {
 }
 
 .header {
-    background-color: #cccccc;
+    background-color: #e0e0e0;
     font-weight: bold;
     font-size: 0.8rem;
     padding: 1rem 0.8rem 0.8rem;
@@ -27,17 +27,26 @@ body {
     background-color: rgb(250, 247, 247);
     font-size: x-small;
     padding: 0.8rem 0 0 0;
-    box-shadow: 0 2px 0px  #cccccc;
-    
+    box-shadow: 0 2px 0px  #cccccc;   
 }
 
 .form-container input {
-    border: 1px solid black;
+    border: 1px solid gray;
     border-radius: 5px;
-    padding: 1px 0.2rem;
+    box-shadow: 0.5px 0.5px 2px 0.2px rgb(73, 71, 71);
+    padding: 0.2rem 0.7rem;
+    font-size: x-small;
     outline: none;
 }
 
+.form-container input:invalid {
+    border: 1px solid red;
+ }
+
+.form-container input:hover {
+    background-color: rgb(243, 243, 243);
+    box-shadow: 1px 1px 3px 0.6px rgb(73, 71, 71);
+}
 
 .form-container input::placeholder {
     font-size: x-small;
@@ -45,6 +54,8 @@ body {
 
 .form-container label {
     margin-bottom: 2px;
+    font: x-small;
+    font-weight: 600;
 }
 .form-contents div {
     margin-bottom: 0.5rem;
