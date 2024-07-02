@@ -5,8 +5,52 @@
 }
 
 body {
-    background-color: rgb(246, 246, 247);
+    background-color: #f5f3f3;
+    padding: 0.7rem;
     scroll-behavior: smooth;
     width: 100%;
     height: 100vh;
+}
+
+.header {
+    background-color: #cccccc;
+    font-weight: bold;
+    font-size: 0.8rem;
+    padding: 1rem 0.8rem 0.8rem;
+}
+
+.header p {
+    margin-bottom: 1rem;
+}
+
+.form-container {
+    background-color: rgb(250, 247, 247);
+    font-size: x-small;
+    padding: 0.8rem 0 0 0;
+    box-shadow: 0 2px 0px  #cccccc;
+    
+}
+
+.form-container input {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1px 0.2rem;
+    outline: none;
+}
+
+
+.form-container input::placeholder {
+    font-size: x-small;
+}
+
+.form-container label {
+    margin-bottom: 2px;
+}
+.form-contents div {
+    margin-bottom: 0.5rem;
+}
+
+.form_row {
+    display: flex;
+    flex-direction: column;
 }
