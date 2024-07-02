@@ -31,28 +31,30 @@ body {
 }
 
 .form-container input {
-    border: 1px solid gray;
-    border-radius: 5px;
-    box-shadow: 0.5px 0.5px 2px 0.2px rgb(73, 71, 71);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    box-shadow: 0.2px 0.2px 2px 0.2px rgb(73, 71, 71);
     padding: 0.2rem 0.7rem;
     font-size: x-small;
     outline: none;
+    transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 .form-container input:invalid {
-    border: 1px solid red;
+    border: 1px solid rgb(248, 44, 44);
  }
 
 .form-container input:hover {
-    background-color: rgb(243, 243, 243);
-    box-shadow: 1px 1px 3px 0.6px rgb(73, 71, 71);
+    background-color: rgb(233, 252, 233);
+    box-shadow: 1px 1px 3px 0.6px rgb(142, 212, 142);
+    color: black;
 }
 
 .form-container input::placeholder {
     font-size: x-small;
 }
 
-.form-container label {
+.form-container label, .login {
     margin-bottom: 2px;
     font: x-small;
     font-weight: 600;
@@ -64,4 +66,23 @@ body {
 .form_row {
     display: flex;
     flex-direction: column;
+}
+
+.btn {
+    border: 0;
+    border-radius: 7px;
+    background-color: rgb(30, 160, 30);
+    color: white;
+    margin-bottom: 10px;
+    padding: 0.6rem 1.5rem;
+    transition: background-color 0.2s;
+}
+
+.btn:hover {
+    background-color: green;
+}
+
+.login-title {
+    color: green;
+    text-decoration: none;
 }
