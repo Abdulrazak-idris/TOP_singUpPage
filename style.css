@@ -12,6 +12,28 @@ body {
     height: 100vh;
 }
 
+.container {
+    display:flex;
+    height: 100%;
+}
+
+.aside_background {
+    display: none;
+    width: 40%;
+    background-image: url('Asset/Images/Form_image_test.jpg');
+    background-size: cover;
+    background-position: center center; 
+    background-repeat: no-repeat;
+}
+
+.contact_info_container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
 .header {
     background-color: #e0e0e0;
     font-weight: bold;
@@ -25,23 +47,26 @@ body {
 
 .form-container {
     background-color: rgb(250, 247, 247);
-    font-size: x-small;
+    width: 100%;
     padding: 0.8rem 0 0 0;
+    margin-bottom: 1rem;
+    font-size: x-small;
     box-shadow: 0 2px 0px  #cccccc;   
 }
 
 .form-container input {
-    border: 1px solid transparent;
+    border: 2px solid transparent;
     border-radius: 4px;
     box-shadow: 0.2px 0.2px 2px 0.2px rgb(73, 71, 71);
     padding: 0.2rem 0.7rem;
     font-size: x-small;
     outline: none;
-    transition: background-color 0.3s, box-shadow 0.3s;
+    transition: all 0.3s;
 }
 
-.form-container input:invalid {
-    border: 1px solid rgb(248, 44, 44);
+.form-container:has(input:focus) input:not(:valid) {
+    border: 2px solid rgb(248, 44, 44);
+    background-color: rgba(219, 139, 125, 0.952);
  }
 
 .form-container input:hover {
@@ -51,7 +76,7 @@ body {
 }
 
 .form-container input::placeholder {
-    font-size: x-small;
+    font-size: x-small;  
 }
 
 .form-container label, .login {
@@ -59,6 +84,7 @@ body {
     font: x-small;
     font-weight: 600;
 }
+
 .form-contents div {
     margin-bottom: 0.5rem;
 }
@@ -85,4 +111,27 @@ body {
 .login-title {
     color: green;
     text-decoration: none;
+}
+
+    /* Desktop/tab representation */
+
+@media only screen and (min-width: 600px){
+    .aside_background {
+        display: block;
+    }
+     
+    .contact_info {
+        display: flex;
+        gap: 4rem;
+    }
+
+    .contact_info_container {
+        width: 60%;
+        padding-left: 1rem;
+    }
+
+    .header p {
+        margin-right: 2rem;
+    }
+
 }
